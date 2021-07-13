@@ -6,19 +6,7 @@ const Box = styled.div`
   border-radius: 8px;
 `;
 
-const MainGrid = styled.main`
-  display: grid;
-  grid-gap: 10px;
-  padding: 16px;
 
-  @media(min-width:860px) {
-    grid-template-areas: 
-    " profileArea welcomeArea profileRelationsArea";
-    grid-template-columns: 160px 618px 312px;
-    
-  }
-
-`;
 
 export default function Home() {
   return (
@@ -38,7 +26,7 @@ export default function Home() {
 
     <div style={{gridArea:'profileRelationsArea'}}>
       <Box>
-        Comunidades
+        Pessoas da Comunidade
       </Box>
     </div>
     </MainGrid>
